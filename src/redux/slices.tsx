@@ -45,10 +45,13 @@ export const counterSlice = createSlice({
     ],
 
   reducers: { 
-      
+      dropList:(state,action)=>{
+         console.log("redux")
+        //  console.log(action.payload)
+      }
   },
 })
 
-export const {} = counterSlice.actions
+export const {dropList} = counterSlice.actions
 
 export default counterSlice.reducer
